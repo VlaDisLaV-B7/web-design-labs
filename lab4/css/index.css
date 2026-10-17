@@ -1,0 +1,62 @@
+﻿
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    font-size: 120%;
+}
+
+a[href="biography.html"]:link {
+    color: red;
+}
+
+a[href="biography.html"]:visited {
+    color: darkred;
+}
+
+a[href="nowadays.html"]:link {
+    color: green;
+}
+
+a[href="nowadays.html"]:visited {
+    color: darkgreen;
+}
+
+a[href="friends.html"]:link {
+    color: blue;
+}
+
+a[href="friends.html"]:visited {
+    color: purple;
+}
+
+a[href="gallery.html"]:link {
+    color: orange;
+}
+
+a[href="gallery.html"]:visited {
+    color: brown;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    gap: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+}
